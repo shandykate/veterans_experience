@@ -7,19 +7,20 @@
   }
 }
 
-.contacts--tel__icon {
-  margin-right: 10px;
-  fill: currentColor;
+.contacts--tel {
+  @media screen and(min-width: 1280px) {
+    font-size: 16px;
+  }
+  .contacts--tel__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .contacts--tel__link {
+    text-decoration: none;
+    color: $primary-text-color;
+    transition: color $animation-timing 250ms;
+  }
+  .contacts--tel__link:hover {
+    color: $accent-color;
+  }
 }
-
-.contacts--tel__link {
-  text-decoration: none;
-  color: $primary-text-color;
-  transition: $animation-timing;
-}
-
-.contacts--tel__link:hover {
-  color: $main-color;
-}
-
-

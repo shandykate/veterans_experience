@@ -1,0 +1,50 @@
+.about.section {
+  background: $primary-text-color;
+}
+
+.about--list {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.about .item-title {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $background-color;
+  font-size: 20px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+}
+
+.about--list__item {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid $background-color;
+  border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 40px;
+  }
+}
+
+.about--list__item:not(:last-child) {
+margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.about .simple-text {
+  color: $background-color;
+  margin: 0;
+}

@@ -1,0 +1,25 @@
+.contacts .thumb {
+  border: 2px solid $main-color;
+  border-radius: 10px;
+  padding: 20px 0;
+  @media screen and (min-width: 768px) {
+    padding: 40px 0;
+  }
+}
+
+.contacts--tel__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts--tel__link {
+  text-decoration: none;
+  color: $primary-text-color;
+  transition: $animation-timing;
+}
+
+.contacts--tel__link:hover {
+  color: $main-color;
+}
+
+

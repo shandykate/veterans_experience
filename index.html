@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Навчальний центр Досвід Ветеранів">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+  <title>Навчальний центр "Досвід Ветеранів"</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="/index.html">
+        <img src="./img/logo.png" alt="Main logo" class="header--logo">
+    </a>
+    <nav class="header--nav">
+      <button type="button" class="menu--button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="24" height="24" aria-label="Перемикач мобільного меню" class="menu--button__svg">
+          <use class="button--icon__cross" href="./img/header-menu-close.svg#icon-cross"></use>
+          <use class="button--icon__burger" href="./img/header-menu-close.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu--container" id="menu-container" data-menu>
+
+        <ul class="header--menu">
+          <li class="header--menu__item"><a href="#team" class="header--menu__link">Команда</a></li>
+          <li class="header--menu__item"><a href="#trainings" class="header--menu__link">Тренінги</a></li>
+          <li class="header--menu__item"><a href="#contacts" class="header--menu__link">Контакти</a></li>
+        </ul>
+        <ul class="btn--list">
+          <li class="btn--list__item">
+            <a class="telegram btn" href="https://t.me/VETERANS_EXPERIENCE" target="a_blank">
+              <svg class="icon" width="20px" height="20px">
+                <use href="./img/symbol-defs.svg#viber">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="btn--list__item"><a class="instagram btn" href="https://www.instagram.com/dosvid_veteraniv/"
+              target="a_blank">
+              <svg class="icon" width="20px" height="20px">
+                <use href="./img/symbol-defs.svg#instagram">
+                </use>
+              </svg></a></li>
+        </ul>
+        <p class="contacts--tel simple-text adress--list__item"><a href="tel:+380681733780" class="contacts--tel__link">
+          <svg class="contacts--tel__icon" width="18px" height="26px">
+            <use href="./img/symbol-defs.svg#icon-cellphone"></use>
+          </svg>+380 68 173 37 80</a></li>
+        </p>   
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <h1 class="visually-hidden">Навчальний центр "Досвід ветеранів"</h1>
+  <iframe height="315" src="https://www.youtube.com/embed/9oLjL4tPvsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </section>
+
+    <section class="about section">
+      <h2 class="section-title visually-hidden">Про нас</h2>
+      <div class="container">
+        <ul class="about--list">
+            <li class="about--list__item">
+                <h3 class="item-title">
+                    Навчальний центр
+                </h3>
+                <p class="simple-text">
+                    Ми прагнемо змінити образ ветерана в суспільстві. Показати що це активні патріоти, повноцінні члени суспільства. Люди, які знайшли своє покликання після служби.
+                </p>
+            </li>
+            <li class="about--list__item">
+                <h3 class="item-title">
+                    Наша мета
+                </h3>
+                <p class="simple-text">
+                Забезпечити робочими місцями та гідною заробітною платою ветеранів війни, осіб з інвалідністю внаслідок бойових дій, сім'ї загиблих.
+                </p>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="team" class="team section">
+      <h2 class="section-title">Команда</h2>
+      <ul class="team--list container">
+        <li class="team--list__item">
+          <h3 class="team--name">Бенцак Роман</h3>
+            <img class="team--img" src="./img/1.jpeg" alt="Бенцак Роман">
+            <ul class="team--text">
+                <li>Засновник проєкту «ДОСВІД ВЕТЕРАНІВ • VETERANS EXPERIENCE»</li>
+                <li>Військовий хірург</li>
+                <li>Учасник бойових дій, ветеран АТО</li>
+                <li>Професійний інструктор з домедичної допомоги та тактичної медицини з 8-ми річним стажем</li>
+            </ul>
+        </li>
+        <li class="team--list__item">
+          <h3 class="team--name">Герцик Костянтин</h3>
+            <img class="team--img" src="./img/2.jpeg" alt="Герцик Костянтин">
+            <ul class="team--text">
+                <li>Співзасновник проєкту «ДОСВІД ВЕТЕРАНІВ • VETERANS EXPERIENCE»</li> 
+                <li>Сертифікований інструктор з невідкладної допомоги з 8-річним досвідом</li>
+                <li>Бойовий медик екіпажу медичної евакуаціі медичного батальйону "Госпітальєри"</li>
+            </ul>
+        </li>
+        <li class="team--list__item">
+          <h3 class="team--name">Майструк Євген</h3>
+            <img class="team--img" src="./img/3.jpeg" alt="Майструк Євген">
+            <ul class="team--text">
+                <li>Ветеран з інвалідністю внаслідок війни</li>
+                <li>Воїн-розвідник 131 Окремого розвідувального батальйону </li>
+                <li>В 2020 році під час виконання бойового завдання отримав тяжке поранення обличчя</li>
+            </ul>
+        </li>
+        <li class="team--list__item">
+          <h3 class="team--name">Молдовян Ігор</h3>
+            <img class="team--img" src="./img/4.jpeg" alt="Молдовян Ігор">
+            <ul class="team--text">
+                <li>Інструктор з домедичної допомоги</li>
+                <li>Лікар щелепно-лицевої хірургії</li>
+                <li>Бойовий медик екіпажу медичної евакуаціі медичного батальйону "Госпітальєри"</li>    
+            </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="trainings" class="trainings section coloured ">
+        <h2 class="section-title">Тренінги</h2>
+        <div class="container">
+          <ul class="trainings--list ">
+            <li class="training--list__item">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzHK1NcUMvK2Kpb-SZShrbPEWbIlw0jPjy300hG_KW5XxiHw/viewform" class="trainings--list__link" target="_blank">
+                    <div class="item--tumb">
+
+                    </div>
+                    <span class="item--text">
+                      Домедична допомога в умовах війни
+                    </span>
+                </a>
+            </li>
+            <li class="training--list__item">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOVRqKSaGfVVdSthKYKKg3gTTaOw-fLeoomZktCBTltY3V7A/viewform" class="trainings--list__link" target="_blank">
+                  <div class="item--tumb">
+
+                  </div>
+                  <span class="item--text">
+                    Зупинка критичних кровотеч
+                  </span>
+              </a>
+          </li>
+          <li class="training--list__item">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzHK1NcUMvK2Kpb-SZShrbPEWbIlw0jPjy300hG_KW5XxiHw/viewform" class="trainings--list__link" target="_blank">
+                <div class="item--tumb">
+
+                </div>
+                <span class="item--text">
+                  Перша домедична допомога дітям
+                </span>
+            </a>
+        </li>
+        </ul>
+        <p class="simple-text">
+          Замовляючи тренінги у нас, Ви допомагаєте ветеранам бути повноцінною частиною суспільства,
+          робити свій вклад у розвиток громади, отримувати гідну заробітну плату, а також з користю 
+          реалізовувати свій потенціал після закінчення військової служби.
+        </p>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts section">
+      <div class="container">
+
+        <h2 class="section-title">Контакти</h2>
+        <div class="thumb">
+        <ul class="btn--list">
+          <li class="btn--list__item">
+            <a class="telegram btn" href="https://t.me/VETERANS_EXPERIENCE" target="a_blank">
+              <svg class="icon" width="20px" height="20px">
+                <use href="./img/symbol-defs.svg#viber">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="btn--list__item"><a class="instagram btn" href="https://www.instagram.com/dosvid_veteraniv/"
+              target="a_blank">
+              <svg class="icon" width="20px" height="20px">
+                <use href="./img/symbol-defs.svg#instagram">
+                </use>
+              </svg></a></li>
+        </ul>
+        <p class="contacts--tel simple-text">
+          <a href="tel:+380681733780" class="contacts--tel__link">
+          <svg class="contacts--tel__icon" width="18px" height="26px">
+            <use href="./img/symbol-defs.svg#icon-cellphone"></use>
+          </svg>+380 68 173 37 80</a></li>
+        </p>    
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section">
+  <div class="container">
+    <p class="simple-text">Veterans Experience &copy; 2022</p>
+  </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
+  <script src="./js/menu.js" type="module"></script>
+  <script src="./js/scroll.js" type="module"></script>
+  <script src="./libs/PageScroll2id.min.js"></script>
+</body>

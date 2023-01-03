@@ -97,9 +97,10 @@
     }
 
     @media screen and (min-width: 1280px) {
-      @extend %flex-row;
-      height: 80px;
+      display: flex;
+      align-items: center;
       justify-content: space-between;
+      height: 80px;
       padding: 0;
       border-top: 0;
       background: transparent;

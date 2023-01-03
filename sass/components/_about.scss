@@ -12,13 +12,11 @@
 
 .about .item-title {
   display: block;
-  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   color: $background-color;
   font-size: 20px;
   @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
     font-size: 26px;
   }
 }

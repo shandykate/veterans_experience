@@ -380,7 +380,7 @@ h6 {
   border: none;
   border-radius: 50%;
   color: #bdbdbd;
-  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .btn--list {
@@ -399,13 +399,14 @@ h6 {
 
 .btn:hover,
 .btn:focus {
+  color: #454545;
   background-color: #554f05;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btn--list__icon {
   width: 30px;
-  fill: #bdbdbd;
+  fill: currentColor;
 }
 
 .header {
@@ -515,9 +516,9 @@ h6 {
 @media screen and (min-width: 1280px) {
   .header .menu--container {
     display: flex;
-    height: 80px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    height: 80px;
     padding: 0;
     border-top: 0;
     background: transparent;
@@ -620,7 +621,6 @@ h6 {
 
 .about .item-title {
   display: block;
-  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #bdbdbd;
@@ -628,7 +628,6 @@ h6 {
 }
 @media screen and (min-width: 1280px) {
   .about .item-title {
-    margin-bottom: 40px;
     font-size: 26px;
   }
 }
@@ -690,10 +689,14 @@ h6 {
 .team--list__item {
   font-size: 14px;
   text-align: center;
+  padding: 20px 0;
   margin-bottom: 40px;
+  border: 2px solid #857e37;
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .team--list__item {
+    padding: 40px 0;
     width: 50%;
   }
 }
@@ -702,6 +705,7 @@ h6 {
     margin-bottom: 60px;
     font-size: 16px;
     line-height: 26px;
+    padding: 60px 0;
   }
 }
 
@@ -710,7 +714,6 @@ h6 {
   font-size: 20px;
   text-transform: uppercase;
   color: black;
-  background: #bdbdbd;
 }
 @media screen and (min-width: 1280px) {
   .team--name {
@@ -727,7 +730,6 @@ h6 {
 @media screen and (min-width: 1280px) {
   .team--img {
     margin-bottom: 20px;
-    padding: 20px;
   }
 }
 
@@ -791,7 +793,7 @@ h6 {
   line-height: 22px;
   background: #bdbdbd;
   border-radius: 10px;
-  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 @media screen and (min-width: 768px) {
   .trainings--list__link {
@@ -805,6 +807,7 @@ h6 {
   }
 }
 .trainings--list__link:hover {
+  color: #bdbdbd;
   background: #857e37;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -812,12 +815,13 @@ h6 {
   justify-content: center;
   width: 120px;
   height: 80px;
-  border: 2px solid #454545;
+  border: 2px solid currentColor;
   border-radius: 5px;
   margin-bottom: 20px;
+  color: currentColor;
 }
 .trainings--list__link .item--tumb .trainings__icon {
-  fill: #454545;
+  fill: currentColor;
   width: 68px;
   height: 68px;
 }

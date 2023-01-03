@@ -406,6 +406,7 @@ h6 {
 
 .btn--list__icon {
   width: 30px;
+  height: 100%;
   fill: currentColor;
 }
 
@@ -711,16 +712,45 @@ h6 {
 @media screen and (min-width: 768px) {
   .team--list__item {
     flex-basis: calc((100% - 40px) / 2);
-    padding: 40px 0;
     width: 50%;
   }
 }
 @media screen and (min-width: 1280px) {
   .team--list__item {
     margin-bottom: 60px;
+    padding: 40px 0;
     font-size: 16px;
     line-height: 26px;
-    padding: 60px 0;
+  }
+}
+.team--list__item .team--name {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+@media screen and (min-width: 1280px) {
+  .team--list__item .team--name {
+    margin-bottom: 40px;
+  }
+}
+.team--list__item .team--img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+@media screen and (min-width: 1280px) {
+  .team--list__item .team--img {
+    margin-bottom: 20px;
+  }
+}
+.team--list__item .team--text {
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .team--list__item .team--text {
+    padding: 0 40px;
   }
 }
 
@@ -730,41 +760,8 @@ h6 {
   }
 }
 
-.team--name {
-  margin-bottom: 20px;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: black;
-}
-@media screen and (min-width: 1280px) {
-  .team--name {
-    margin-bottom: 20px;
-  }
-}
-
-.team--img {
-  display: block;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-}
-@media screen and (min-width: 1280px) {
-  .team--img {
-    margin-bottom: 20px;
-  }
-}
-
-.team--text {
-  padding: 0 20px;
-}
-@media screen and (min-width: 768px) {
-  .team--text {
-    padding: 0 40px;
-  }
-}
-
 .trainings.section {
-  background-image: url(../../img/about-bg.jpeg);
+  background-image: url(./../img/about-bg.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

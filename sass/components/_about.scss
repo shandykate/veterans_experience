@@ -24,6 +24,8 @@
 }
 
 .about--list__item {
+  @extend %flex-row;
+  flex-direction: column;
   width: 100%;
   padding: 20px;
   border: 2px solid $background-color;
@@ -33,6 +35,12 @@
   }
   @media screen and (min-width: 1280px) {
     padding: 40px;
+  }
+  .item-svg {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    fill: $background-color;
   }
 }
 
@@ -48,3 +56,5 @@ margin-bottom: 40px;
   color: $background-color;
   margin: 0;
 }
+
+

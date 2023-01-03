@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.contacts--tel__link, .trainings--list__link .item--tumb, .trainings--list__link, .about--list__item, .header .menu--button, .header .header--logo__link, .header, .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -274,8 +280,8 @@ body {
   letter-spacing: 0.5px;
   line-height: 22px;
   font-weight: 400;
-  color: #4a4949;
-  background: #c8c8c8;
+  color: #454545;
+  background: #bdbdbd;
 }
 @media screen and (min-width: 1280px) {
   html,
@@ -366,16 +372,14 @@ h6 {
 }
 
 .btn {
-  display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
   width: 60px;
   height: 60px;
   padding: 0;
   border: none;
   border-radius: 50%;
-  color: #c8c8c8;
+  color: #bdbdbd;
   transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
@@ -395,8 +399,13 @@ h6 {
 
 .btn:hover,
 .btn:focus {
-  background-color: #575217;
+  background-color: #554f05;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--list__icon {
+  width: 30px;
+  fill: #bdbdbd;
 }
 
 .header {
@@ -405,16 +414,14 @@ h6 {
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 10;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   padding: 10px 20px;
   width: 100%;
   min-width: 320px;
   max-width: 1400px;
-  border-bottom: 2px solid #4a4949;
-  background-color: #c8c8c8;
+  border-bottom: 2px solid #454545;
+  background-color: #bdbdbd;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -427,9 +434,7 @@ h6 {
   }
 }
 .header .header--logo__link {
-  display: flex;
   justify-content: left;
-  align-items: center;
 }
 .header .header--logo__link .header--logo__img {
   width: 60px;
@@ -461,9 +466,7 @@ h6 {
   }
 }
 .header .menu--button {
-  display: inline-flex;
   justify-content: center;
-  align-items: center;
   width: 60px;
   height: 60px;
   border: 0;
@@ -479,7 +482,7 @@ h6 {
 .header .menu--button:hover,
 .header .menu--button:focus {
   cursor: pointer;
-  fill: #575217;
+  fill: #554f05;
 }
 .header .menu--button .button--icon__cross {
   display: none;
@@ -491,7 +494,7 @@ h6 {
   display: none;
 }
 .header .menu--container {
-  background: #c8c8c8;
+  background: #bdbdbd;
 }
 @media screen and (max-width: 1279px) {
   .header .menu--container {
@@ -501,7 +504,7 @@ h6 {
     right: 0;
     padding: 40px;
     text-align: center;
-    border-top: 2px solid #4a4949;
+    border-top: 2px solid #454545;
   }
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
@@ -567,7 +570,7 @@ h6 {
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
-  color: #4a4949;
+  color: #454545;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 @media screen and (min-width: 1280px) {
@@ -577,7 +580,7 @@ h6 {
 }
 .header .header--menu__link:hover,
 .header .header--menu__link:focus {
-  color: #575217;
+  color: #554f05;
 }
 @media screen and (min-width: 1280px) {
   .header .btn--list {
@@ -602,7 +605,7 @@ h6 {
 }
 
 .about.section {
-  background: #4a4949;
+  background: #454545;
 }
 
 .about--list {
@@ -620,7 +623,7 @@ h6 {
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #c8c8c8;
+  color: #bdbdbd;
   font-size: 20px;
 }
 @media screen and (min-width: 1280px) {
@@ -631,9 +634,10 @@ h6 {
 }
 
 .about--list__item {
+  flex-direction: column;
   width: 100%;
   padding: 20px;
-  border: 2px solid #c8c8c8;
+  border: 2px solid #bdbdbd;
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
@@ -645,6 +649,12 @@ h6 {
   .about--list__item {
     padding: 40px;
   }
+}
+.about--list__item .item-svg {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  fill: #bdbdbd;
 }
 
 .about--list__item:not(:last-child) {
@@ -658,7 +668,7 @@ h6 {
 }
 
 .about .simple-text {
-  color: #c8c8c8;
+  color: #bdbdbd;
   margin: 0;
 }
 
@@ -700,7 +710,7 @@ h6 {
   font-size: 20px;
   text-transform: uppercase;
   color: black;
-  background: #c8c8c8;
+  background: #bdbdbd;
 }
 @media screen and (min-width: 1280px) {
   .team--name {
@@ -735,7 +745,7 @@ h6 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #c8c8c8;
+  color: #bdbdbd;
 }
 .trainings.section .section-title {
   color: white;
@@ -770,18 +780,16 @@ h6 {
 }
 
 .trainings--list__link {
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 20px;
   width: 100%;
-  color: #4a4949;
+  color: #454545;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
-  background: #c8c8c8;
+  background: #bdbdbd;
   border-radius: 10px;
   transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
@@ -801,11 +809,17 @@ h6 {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .trainings--list__link .item--tumb {
-  width: 150px;
-  height: 100px;
-  border: 2px solid #4a4949;
+  justify-content: center;
+  width: 120px;
+  height: 80px;
+  border: 2px solid #454545;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+.trainings--list__link .item--tumb .trainings__icon {
+  fill: #454545;
+  width: 68px;
+  height: 68px;
 }
 
 .contacts .thumb {
@@ -823,11 +837,9 @@ h6 {
 }
 
 .contacts--tel__link {
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #4a4949;
+  color: #454545;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 @media screen and (min-width: 1280px) {
@@ -836,16 +848,16 @@ h6 {
   }
 }
 .contacts--tel__link:hover {
-  color: #575217;
+  color: #554f05;
 }
 .contacts--tel__link .contacts--tel__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .footer.section {
   margin: 0 auto;
   padding: 10px 0;
   color: white;
-  background: #4a4949;
+  background: #454545;
 }/*# sourceMappingURL=main.css.map */

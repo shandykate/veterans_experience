@@ -11,8 +11,7 @@
 }
 
 .contacts--tel__link {
-  display: inline-flex;
-  align-items: center;
+  @extend %flex-row;
   justify-content: center;
   text-decoration: none;
   color: $primary-text-color;
@@ -25,6 +24,6 @@
   }
   .contacts--tel__icon {
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 }

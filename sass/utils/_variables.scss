@@ -1,10 +1,12 @@
-// Colors
 $main-color: #857e37;
-$background-color: #c8c8c8;
-$primary-text-color: #4a4949;
-$accent-color: #575217;
-$telegram-color: #376a9d;
-$instagram-color: #5c235a;
+$background-color: #bdbdbd;
+$primary-text-color: #454545;
+$accent-color: #554f05;
 
-//Animation
 $animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+
+%flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

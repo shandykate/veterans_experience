@@ -3,4 +3,20 @@
   padding: 10px 0;
   color: white;
   background: $primary-text-color;
+  .footer--thumb {
+    @extend %flex-row;
+    .logo--footer {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      background-image: url(./../../img/logo_white.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      @media screen and (min-width: 1280px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
 }

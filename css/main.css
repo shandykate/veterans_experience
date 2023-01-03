@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.contacts--tel__link, .trainings--list__link .item--tumb, .trainings--list__link, .about--list__item, .header .header--nav .menu--button, .header .logo-thumb .header--logo__link, .header .logo-thumb, .header, .btn {
+.footer.section .footer--thumb, .contacts--tel__link, .trainings--list__link .item--tumb, .trainings--list__link, .about--list__item, .header .header--nav .menu--button, .header .logo-thumb .header--logo__link, .header .logo-thumb, .header, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -882,4 +882,19 @@ h6 {
   padding: 10px 0;
   color: white;
   background: #454545;
+}
+.footer.section .footer--thumb .logo--footer {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-image: url(./../../img/logo_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 1280px) {
+  .footer.section .footer--thumb .logo--footer {
+    width: 50px;
+    height: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */

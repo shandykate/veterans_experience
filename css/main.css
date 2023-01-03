@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.contacts--tel__link, .trainings--list__link .item--tumb, .trainings--list__link, .about--list__item, .header .menu--button, .header .header--logo__link, .header, .btn {
+.contacts--tel__link, .trainings--list__link .item--tumb, .trainings--list__link, .about--list__item, .header .header--nav .menu--button, .header .logo-thumb .header--logo__link, .header .logo-thumb, .header, .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -434,27 +434,25 @@ h6 {
     padding: 10px 60px;
   }
 }
-@media screen and (min-width: 1280px) {
-  .header .header--nav {
-    display: flex;
-    padding: 0;
-  }
-}
-.header .header--logo__link {
+.header .logo-thumb .header--logo__link {
   justify-content: left;
+  transition: scale cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.header .header--logo__link .header--logo__img {
+.header .logo-thumb .header--logo__link:hover, .header .logo-thumb .header--logo__link:focus {
+  scale: 1.15;
+}
+.header .logo-thumb .header--logo__link .header--logo__img {
   width: 60px;
   height: 60px;
 }
 @media screen and (min-width: 1280px) {
-  .header .header--logo__link .header--logo__img {
-    margin-right: 10px;
+  .header .logo-thumb .header--logo__link .header--logo__img {
+    margin-right: 20px;
     width: 80px;
     height: 80px;
   }
 }
-.header .header--logo__link .header__logo__text {
+.header .logo-thumb .header__logo__text {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.4px;
@@ -462,11 +460,17 @@ h6 {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1279px) {
-  .header .header--logo__link .header__logo__text {
+  .header .logo-thumb .header__logo__text {
     display: none;
   }
 }
-.header .menu--button {
+@media screen and (min-width: 1280px) {
+  .header .header--nav {
+    display: flex;
+    padding: 0;
+  }
+}
+.header .header--nav .menu--button {
   justify-content: center;
   width: 60px;
   height: 60px;
@@ -476,28 +480,28 @@ h6 {
   transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 @media screen and (min-width: 1280px) {
-  .header .menu--button {
+  .header .header--nav .menu--button {
     display: none;
   }
 }
-.header .menu--button:hover, .header .menu--button:focus {
+.header .header--nav .menu--button:hover, .header .header--nav .menu--button:focus {
   cursor: pointer;
   fill: #554f05;
 }
-.header .menu--button .button--icon__cross {
+.header .header--nav .menu--button .button--icon__cross {
   display: none;
 }
-.header .menu--button.is-open .button--icon__cross {
+.header .header--nav .menu--button.is-open .button--icon__cross {
   display: block;
 }
-.header .menu--button.is-open .button--icon__burger {
+.header .header--nav .menu--button.is-open .button--icon__burger {
   display: none;
 }
-.header .menu--container {
+.header .header--nav .menu--container {
   background: #454545;
 }
 @media screen and (max-width: 1279px) {
-  .header .menu--container {
+  .header .header--nav .menu--container {
     display: none;
     position: absolute;
     top: 100%;
@@ -508,12 +512,12 @@ h6 {
   }
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
-  .header .menu--container {
+  .header .header--nav .menu--container {
     padding: 60px 0 40px 0;
   }
 }
 @media screen and (min-width: 1280px) {
-  .header .menu--container {
+  .header .header--nav .menu--container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -523,51 +527,51 @@ h6 {
     background: transparent;
   }
 }
-.header .menu--container.is-open {
+.header .header--nav .menu--container.is-open {
   display: block;
   width: 300px;
   box-shadow: 0px 2px 2px rgba(2, 0, 0, 0.4);
   overflow: scroll;
 }
 @media screen and (min-width: 768px) {
-  .header .menu--container.is-open {
+  .header .header--nav .menu--container.is-open {
     width: 400px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .header .menu--container.is-open {
+  .header .header--nav .menu--container.is-open {
     display: flex;
     width: 100%;
     box-shadow: none;
   }
 }
-.header .header--menu {
+.header .header--nav .header--menu {
   font-size: 18px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 1280px) {
-  .header .header--menu {
+  .header .header--nav .header--menu {
     font-size: 16px;
     display: flex;
     margin-right: 40px;
     margin-bottom: 0;
   }
 }
-.header .header--menu .header--menu__item:not(:last-child) {
+.header .header--nav .header--menu .header--menu__item:not(:last-child) {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .header .header--menu .header--menu__item:not(:last-child) {
+  .header .header--nav .header--menu .header--menu__item:not(:last-child) {
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .header .header--menu .header--menu__item:not(:last-child) {
+  .header .header--nav .header--menu .header--menu__item:not(:last-child) {
     margin-bottom: 0;
     margin-right: 40px;
   }
 }
-.header .header--menu .header--menu__link {
+.header .header--nav .header--menu .header--menu__link {
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
@@ -575,25 +579,33 @@ h6 {
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 @media screen and (min-width: 1280px) {
-  .header .header--menu .header--menu__link {
+  .header .header--nav .header--menu .header--menu__link {
     padding: 40px 0;
   }
 }
-.header .header--menu .header--menu__link:hover, .header .header--menu .header--menu__link:focus {
+.header .header--nav .header--menu .header--menu__link:hover, .header .header--nav .header--menu .header--menu__link:focus {
   color: #554f05;
 }
 @media screen and (min-width: 1280px) {
-  .header .btn--list {
+  .header .header--nav .btn--list {
     margin-bottom: 0;
     margin-right: 20px;
   }
 }
-.header .contacts--tel__link {
+.header .header--nav .contacts--tel__link {
   color: #bdbdbd;
+}
+.header .header--nav .contacts--tel__link:hover, .header .header--nav .contacts--tel__link:focus {
+  color: #554f05;
 }
 
 .hero.section {
-  padding: 0;
+  padding: 80px 0 0 0;
+}
+@media screen and (min-width: 1280px) {
+  .hero.section {
+    padding: 100px 0 0 0;
+  }
 }
 
 .hero iframe {
@@ -752,7 +764,7 @@ h6 {
 }
 
 .trainings.section {
-  background-image: url(../../img/about-bg.jpg);
+  background-image: url(../../img/about-bg.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

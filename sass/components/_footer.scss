@@ -1,7 +1,7 @@
 .footer.section {
   margin: 0 auto;
   padding: 10px 0;
-  color: white;
+  color: $background-color;
   background: $primary-text-color;
   .footer--thumb {
     @extend %flex-row;

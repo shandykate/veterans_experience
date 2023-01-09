@@ -9,21 +9,3 @@
     padding: 40px 0;
   }
 }
-
-.contacts--tel__link {
-  @extend %flex-row;
-  justify-content: center;
-  text-decoration: none;
-  color: $primary-text-color;
-  transition: color $animation-timing 250ms;
-  @media screen and(min-width: 1280px) {
-    font-size: 16px;
-  }
-  &:hover {
-    color: $accent-color;
-  }
-  .contacts--tel__icon {
-    fill: currentColor;
-    margin-right: 5px;
-  }
-}

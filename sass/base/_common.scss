@@ -141,8 +141,8 @@ h6 {
       }
       &:hover,
       &:focus {
-        font-weight: 600;
         color: $accent-color;
+        text-shadow: $box-shadow;
       }
       .contacts-icon {
         fill: currentColor;
@@ -150,4 +150,10 @@ h6 {
       }
     }
   }
+}
+
+#about, #team, #trainings, #contacts {
+  border-top: 60px solid transparent;
+	margin-top: -60px;
+	background-clip: border-box;
 }

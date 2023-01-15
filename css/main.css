@@ -424,12 +424,18 @@ h6 {
   }
 }
 .contacts-list .contacts-item .contacts-link:hover, .contacts-list .contacts-item .contacts-link:focus {
-  font-weight: 600;
   color: #554f05;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .contacts-list .contacts-item .contacts-link .contacts-icon {
   fill: currentColor;
   margin-right: 5px;
+}
+
+#about, #team, #trainings, #contacts {
+  border-top: 60px solid transparent;
+  margin-top: -60px;
+  background-clip: border-box;
 }
 
 .header {
@@ -448,11 +454,6 @@ h6 {
 @media screen and (min-width: 768px) {
   .header .header-container {
     padding: 0 40px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header .header-container {
-    padding: 0 60px;
   }
 }
 
@@ -627,6 +628,11 @@ h6 {
     font-size: 16px;
     font-weight: 400;
     color: #bdbdbd;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+  .header-menu .header-list .header-link:hover, .header-menu .header-list .header-link:focus {
+    color: #857e37;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -677,10 +683,10 @@ h6 {
 .contacts-thumb .btn--list .btn {
   color: #bdbdbd;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  background: #554f05;
+  background: #857e37;
 }
 .contacts-thumb .btn--list .btn:hover, .contacts-thumb .btn--list .btn:focus {
-  color: #454545;
+  color: #857e37;
   background-color: #bdbdbd;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }

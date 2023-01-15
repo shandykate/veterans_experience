@@ -90,7 +90,6 @@ h6 {
 .btn--list {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
   .btn--list__item:not(:last-child) {
     margin-right: 20px;
   }
@@ -122,24 +121,33 @@ h6 {
   }
 }
 
-.contacts--tel__link {
-  display: inline-flex;
-  text-align: center;
+.contacts-list {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  text-decoration: none;
-  color: $primary-text-color;
-  transition: color $animation-timing 250ms;
-  @media screen and(min-width: 1280px) {
-    font-size: 16px;
-  }
-  &:hover,
-  &:focus {
-    font-weight: 600;
-    color: $accent-color;
-  }
-  .contacts--tel__icon {
-    fill: currentColor;
-    margin-right: 5px;
+  .contacts-item {
+    margin-top: 20px;
+    .contacts-link {
+      display: inline-flex;
+      text-align: center;
+      align-items: center;
+      margin: 0 auto;
+      text-decoration: none;
+      color: $primary-text-color;
+      transition: color $animation-timing 250ms;
+      @media screen and(min-width: 1280px) {
+        font-size: 16px;
+      }
+      &:hover,
+      &:focus {
+        font-weight: 600;
+        color: $accent-color;
+      }
+      .contacts-icon {
+        fill: currentColor;
+        margin-right: 5px;
+      }
+    }
   }
 }

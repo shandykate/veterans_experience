@@ -12,52 +12,72 @@
 </head>
 
 <body>
-<header class="header">
-<div class="logo-thumb">
-    <a href="./index.html" class="header--logo__link">
-      <img src="./img/logo.svg" alt="Main logo" class="header--logo__img">
-  </a>
-  <span class="header__logo__text">Досвід Ветеранів • Veteran's experience</span>
-</div>
-  <nav class="header--nav">
-    <button type="button" class="menu--button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-      <svg width="24" height="24" aria-label="Перемикач мобільного меню" class="menu--button__svg">
-        <use class="button--icon__cross" href="./img/header-menu-close.svg#icon-cross"></use>
-        <use class="button--icon__burger" href="./img/header-menu-close.svg#icon-menu"></use>
-      </svg>
-    </button>
-    <div class="menu--container" id="menu-container" data-menu>
-      <ul class="header--menu">
-        <li class="header--menu__item"><a href="#team" class="header--menu__link">Команда</a></li>
-        <li class="header--menu__item"><a href="#trainings" class="header--menu__link">Тренінги</a></li>
-        <li class="header--menu__item"><a href="#contacts" class="header--menu__link">Контакти</a></li>
-      </ul>
-      <ul class="btn--list">
-        <li class="btn--list__item">
-          <a class="btn" href="https://t.me/VETERANS_EXPERIENCE" target="a_blank">
-            <svg class="btn--list__icon">
-              <use href="./img/symbol-defs.svg#icon-telegram">
-              </use>
-            </svg>
-          </a>
-        </li>
-        <li class="btn--list__item">
-          <a class="btn" href="https://www.instagram.com/dosvid_veteraniv/"
-            target="a_blank">
-            <svg class="btn--list__icon">
-              <use href="./img/symbol-defs.svg#icon-instagram">
-              </use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <p class="contacts--tel simple-text"><a href="tel:+380681733780" class="contacts--tel__link">
-        <svg class="contacts--tel__icon" width="18px" height="26px">
-          <use href="./img/symbol-defs.svg#icon-mobile"></use>
-        </svg>+38&ensp;(068)&ensp;173-37-80</a></li>
-      </p>   
-  </nav>
-  </header>
+  <header class="header">
+    <div class="header-container">
+     <div class="header-body">
+         <div class="header-thumb">
+             <a href="./index.html" class="header-logo">
+                 <img src="./img/logo.svg" alt="logo">
+             </a>
+             <span class="header-name">ДОСВІД ВЕТЕРАНІВ • VETERANS EXPERIENCE</span>
+         </div>
+         <div class="header-burger">
+             <span></span>
+         </div>
+         <nav class="header-menu">
+             <ul class="header-list">
+                 <li class="header-item">
+                     <a href="#about" class="header-link">Про нас</a>
+                 </li>
+                 <li class="header-item">
+                     <a href="#team" class="header-link">Команда</a>
+                 </li>
+                 <li class="header-item">
+                     <a href="#trainings" class="header-link">Тренінги</a>
+                 </li>
+                 <li class="header-item">
+                     <a href="#contacts" class="header-link">Контакти</a>
+                 </li>
+             </ul>
+         <div class="contacts-thumb">
+          <ul class="btn--list">
+            <li class="btn--list__item">
+              <a class="telegram btn" href="https://t.me/VETERANS_EXPERIENCE" target="a_blank">
+                <svg class="btn--list__icon">
+                  <use href="./img/symbol-defs.svg#icon-telegram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="btn--list__item">
+              <a class="instagram btn" href="https://www.instagram.com/dosvid_veteraniv/"
+                target="a_blank">
+                <svg class="btn--list__icon">
+                  <use href="./img/symbol-defs.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a href="tel:+380681733780" class="contacts-link">
+                  <svg class="contacts-icon" width="18px" height="26px">
+                    <use href="./img/symbol-defs.svg#icon-mobile"></use>
+                  </svg>+38&ensp;(068)&ensp;173-37-80</a>
+              </li>
+                <li class="contacts-item">
+                  <a class="contacts-link" href="mailto:idosvid.veteraniv@gmail.com">
+                  <svg class="contacts-icon" width="26px" height="18px">
+                      <use href="./img/symbol-defs.svg#icon-mail"></use>
+                  </svg>dosvid.veteraniv@gmail.com</a>
+                </li>
+            </ul>
+          </div>
+         </nav>
+     </div>
+    </div>
+ </header>
 
   <main>
     <section class="hero section">
@@ -65,7 +85,7 @@
   <iframe height="315" src="https://www.youtube.com/embed/9oLjL4tPvsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
     </section>
 
-    <section class="about section">
+    <section id="about" class="about section">
       <h2 class="section-title visually-hidden">Про нас</h2>
       <div class="container">
         <ul class="about--list">
@@ -213,10 +233,20 @@
             </a>
           </li>
         </ul>
-          <a href="tel:+380681733780" class="contacts--tel__link simple-text">
-          <svg class="contacts--tel__icon" width="18px" height="26px">
-            <use href="./img/symbol-defs.svg#icon-mobile"></use>
-          </svg>+38&ensp;(068)&ensp;173-37-80</a>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a href="tel:+380681733780" class="contacts-link">
+                <svg class="contacts-icon" width="18px" height="26px">
+                  <use href="./img/symbol-defs.svg#icon-mobile"></use>
+                </svg>+38&ensp;(068)&ensp;173-37-80</a>
+            </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:idosvid.veteraniv@gmail.com">
+                <svg class="contacts-icon" width="26px" height="18px">
+                    <use href="./img/symbol-defs.svg#icon-mail"></use>
+                </svg>dosvid.veteraniv@gmail.com</a>
+              </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -230,7 +260,6 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
   <script src="./js/menu.js" type="module"></script>
   <script src="./js/scroll.js" type="module"></script>
   <script src="./libs/PageScroll2id.min.js"></script>

@@ -44,6 +44,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
+    margin-right: 80px;
   }
   .header-logo {
     display: block;
@@ -56,7 +57,7 @@
     @media screen and (min-width: 1200px) {
       width: 70px;
       height: 70px;
-      margin-right: 20px;
+      margin-right: 10px;
     }
     img {
       width: 50px;
@@ -136,7 +137,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   padding: 80px 0;
   background-color: $main-color;
   transition: all $animation-timing 250ms;
@@ -145,8 +145,10 @@
     top: 0;
     right: 0;
     display: flex;
-    width: 100%;
-    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+  }
     .header-list {
       position: relative;
       z-index: 3;
@@ -154,10 +156,21 @@
       flex-direction: column;
       @media screen and (min-width: 1200px) {
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        .header-item:not(:last-child) {
+          margin-right: 40px;
+        }
+        .header-link {
+          font-size: 16px;
+          font-weight: 400;
+          color: $background-color;
+        }
       }
     }
   }
-}
+
 .header-menu.active {
   display: flex;
   flex-direction: column;
@@ -192,6 +205,10 @@
 }
 
 .contacts-thumb {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
   .btn--list {
     position: relative;
     z-index: 3;
@@ -204,14 +221,17 @@
         color: $primary-text-color;
         background-color: $background-color;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+        .btn__list--item:not(:last-child) {
+          @media screen and (min-width: 1200px) {
+            margin-right: 10px;
+          }
+        }
       }
     }
   }
   .contacts-list {
-    position: relative;
-    z-index: 3;
-    .contacts-item {
-      color: $background-color;
+    @media screen and (min-width: 1200px) {
+      display: none;
     }
   }
 }

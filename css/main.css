@@ -831,7 +831,6 @@ h6 {
 .team--list__item .team--img {
   display: block;
   width: 100%;
-  max-width: 600px;
   margin: 0 auto 20px auto;
 }
 @media screen and (min-width: 1280px) {

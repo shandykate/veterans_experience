@@ -90,19 +90,27 @@
  </header>
 
   <main>
-<hero class="section">
+<hero class="hero section">
   <div class="slider">
-    <div class="slider-line">
-      <img src="./img/hero/6.jpeg" alt="Фото тренінгу" class="slider-img">
-      <img src="./img/hero/5.jpeg" alt="Фото тренінгу" class="slider-img">
-      <img src="./img/hero/4.jpeg" alt="Фото тренінгу" class="slider-img">
-      <img src="./img/hero/3.jpeg" alt="Фото тренінгу" class="slider-img">
-      <img src="./img/hero/2.jpeg" alt="Фото тренінгу" class="slider-img">
-      <img src="./img/hero/1.jpeg" alt="Фото тренінгу" class="slider-img">
+    <div class="slider__item">
+      <img data-lazy="./img/hero/6.jpeg" alt="Фото тренінгу" class="slider-img">
+    </div>
+    <div class="slider__item">
+      <img data-lazy="./img/hero/5.jpeg" alt="Фото тренінгу" class="slider-img">
+    </div>
+    <div class="slider__item">
+      <img data-lazy="./img/hero/4.jpeg" alt="Фото тренінгу" class="slider-img">
+    </div>
+    <div class="slider__item">
+      <img data-lazy="./img/hero/3.jpeg" alt="Фото тренінгу" class="slider-img">
+    </div>
+    <div class="slider__item">
+      <img data-lazy="./img/hero/2.jpeg" alt="Фото тренінгу" class="slider-img">
+    </div>
+    <div class="slider__item">
+      <img data-lazy="./img/hero/1.jpeg" alt="Фото тренінгу" class="slider-img">
     </div>
   </div>
-  <button class="slider-next">Next</button>
-  <button class="slider-prev">Previous</button>
 </hero>
 
     <section id="about" class="about section">
@@ -320,9 +328,10 @@
   </div>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="./js/menu.js" type="module"></script>
   <script src="./js/scroll.js" type="module"></script>
+  <script src="./js/slick.min.js" type="module"></script>
   <script src="./js/slider.js" type="module"></script>
   <script src="./libs/PageScroll2id.min.js"></script>
 </body>

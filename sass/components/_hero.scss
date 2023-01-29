@@ -1,16 +1,83 @@
-.hero.section {
-  padding-top: 60px;
+.slick-slider {
+  max-width: 1400px;
+  min-width: 320px
+  margin: 0 auto;
+  margin-top: 60px;
+  line-height: 0;
   @media screen and (min-width: 1200px) {
-  padding-top: 90px;
+    margin-top: 90px;
   }
 }
-.slider {
+.slick-list {
   overflow: hidden;
-  width: 100%;
-  
+}
+.slick-track {
+  display: flex;
 }
 
-.slider-line {
+.slider {
+  position: relative;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  border: 0;
+  box-shadow: 0;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 0 ;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 20px;
+  background: url(./../img/left.png) 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 20px;
+  background: url(./../../img/right.png) 0 0 / 100% no-repeat;
+}
+
+.slider__item {
+position: relative;
+text-align: center;
+display: flex;
+justify-content: center;
+}
+
+.slider .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
   display: flex;
-  transition: all $animation-timing 500ms;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: $background-color;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+}
+
+.slider .slick-dots li.slick-active button {
+  background: transparent;
+  border: 2px solid $background-color;
+}
+
+.slider-img {
+    // width: 100%;
 }

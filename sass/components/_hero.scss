@@ -1,28 +1,16 @@
 .hero.section {
-  width: 100%;
-  height: 600px;
-  max-width: 1400px;
-  min-width: 320px;
-  margin: 60px auto 0 auto;
-  background-image: url(./../../img/hero_mob.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding-top: 60px;
   @media screen and (min-width: 1200px) {
-    background-image: url(./../../img/hero.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 90px auto 0 auto;
+  padding-top: 90px;
   }
 }
+.slider {
+  overflow: hidden;
+  width: 100%;
+  
+}
 
-// .hero iframe {
-//   object-fit: cover;
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   @media screen and (min-width: 768px) {
-//     height: 430px;
-//   }
-// }
+.slider-line {
+  display: flex;
+  transition: all $animation-timing 500ms;
+}

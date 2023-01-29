@@ -506,7 +506,7 @@ h6 {
 .header-thumb .header-name {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .header-thumb .header-name {
     display: block;
     position: relative;
@@ -632,8 +632,8 @@ h6 {
 }
 @media screen and (min-width: 1200px) {
   .header-menu .header-list .header-link {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .header-menu .header-list .header-link:hover, .header-menu .header-list .header-link:focus {
     color: #857e37;
@@ -937,6 +937,43 @@ h6 {
   fill: currentColor;
   width: 68px;
   height: 68px;
+}
+
+.partners.section {
+  background-color: #454545;
+}
+.partners.section .partners-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .partners.section .partners-list {
+    gap: 40px;
+  }
+}
+.partners.section .partners-list .partners-item {
+  border-radius: 10px;
+  overflow: hidden;
+  flex-basis: calc((100% - 40px) / 3);
+}
+@media screen and (min-width: 768px) {
+  .partners.section .partners-list .partners-item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partners.section .partners-list .partners-item {
+    flex-basis: calc((100% - 280px) / 8);
+  }
+}
+.partners.section .partners-list .partners-item .partners-logo {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .contacts .thumb {

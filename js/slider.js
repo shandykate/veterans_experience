@@ -6,9 +6,7 @@ $(document).ready(function(){
     speed:1000,
     easing:'linear',
     autoplay:true,
-    autoplaySpeed:1000,
-    pauseOnFocus:true,
-    pauseOnHover:true,
+    autoplaySpeed:2000,
     // fade:true,
     });
 });
